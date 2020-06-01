@@ -1,0 +1,16 @@
+//v1.2
+public static List<String> load(String path) throws IOException{
+			List data=new ArrayList<String>();
+			InputStreamReader in=new InputStreamReader(new FileInputStream(path),"UTF-8");
+			BufferedReader bin=new BufferedReader(in);
+			String line="";
+			int count=1;
+			while((line=bin.readLine())!=null){
+				if(count==1){
+					line=line.substring(1);
+					count++;
+				}
+				data.add(line);
+			}
+			return data;
+}
