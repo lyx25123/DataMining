@@ -1,6 +1,4 @@
-//modify some error
-
-//v1.1
+//v1.2
 public static List<String> load(String path) throws IOException{
 			List data=new ArrayList<String>();
 			InputStreamReader in=new InputStreamReader(new FileInputStream(path),"UTF-8");
